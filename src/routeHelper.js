@@ -1,0 +1,1 @@
+export const getPath = (uri = '') => `/sapper-qa-quest${uri}`
