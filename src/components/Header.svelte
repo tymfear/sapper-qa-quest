@@ -25,6 +25,7 @@
   .logo,
   .credits {
     width: 20%;
+    padding: 0 1rem;
   }
   .credits {
     text-align: right;
