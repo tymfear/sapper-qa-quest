@@ -1,6 +1,5 @@
 <script>
   import { headerStore } from "../components/stores/store.js";
-  import Head from "../components/Head.svelte";
   import { onMount } from "svelte";
   import { getPath } from "../routeHelper";
 
@@ -41,8 +40,6 @@
     border: orange 1px solid;
   }
 </style>
-
-<Head />
 
 <div id="quest-navigator">
   <h1>Choose your quest</h1>
