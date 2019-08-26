@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
-
+  import { fade } from "svelte/transition";
   const dispatch = createEventDispatcher();
   const dispatchClose = () => dispatch("closeModal");
 </script>
@@ -54,14 +54,16 @@
 </style>
 
 <div class="modal-background" on:click={dispatchClose} />
+<div transition:fade={{ duration: 20 }}>
 
-<div class="modal">
-  <header id="header">
-    <slot name="header" />
-  </header>
+  <div class="modal">
+    <header id="header">
+      <slot name="header" />
+    </header>
 
-  <slot />
-  <footer>
-    <button class="close" on:click={dispatchClose}>Close</button>
-  </footer>
+    <slot />
+    <footer>
+      <button class="close" on:click={dispatchClose}>Close</button>
+    </footer>
+  </div>
 </div>

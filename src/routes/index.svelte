@@ -2,7 +2,7 @@
   import { headerStore } from "../components/stores/store.js";
   import { onMount } from "svelte";
   import { getPath } from "../routeHelper";
-
+  import TransitionWrapper from "../components/TransitionWrapper.svelte";
   onMount(() => {
     headerStore.update(store => {
       return {
@@ -41,10 +41,12 @@
   }
 </style>
 
-<div id="quest-navigator">
-  <h1>Choose your quest</h1>
+<TransitionWrapper>
+  <div id="quest-navigator">
+    <h1>Choose your quest</h1>
 
-  <div id="navigator-links">
-    <a href={getPath('/kitty')}>Show me a Kitty!</a>
+    <div id="navigator-links">
+      <a href={getPath('/kitty')}>Show me a Kitty!</a>
+    </div>
   </div>
-</div>
+</TransitionWrapper>

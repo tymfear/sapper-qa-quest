@@ -1,8 +1,11 @@
 <script>
   import KittyToggle from "./_KittyToggle.svelte";
+  import TransitionWrapper from "../../components/TransitionWrapper.svelte";
 </script>
 
-<h2>Admin Area</h2>
-<div>
-  <KittyToggle />
-</div>
+<TransitionWrapper>
+  <h2>Admin Area</h2>
+  <div>
+    <KittyToggle />
+  </div>
+</TransitionWrapper>
