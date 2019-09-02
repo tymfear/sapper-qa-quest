@@ -8,43 +8,22 @@
   let showModal = false;
 </script>
 
-<style>
-  header {
-    background-color: black;
-    color: orange;
-    padding: 0 1rem;
-    display: flex;
-    align-content: space-between;
-  }
-  .quest-name {
-    flex-grow: 1;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 0;
-  }
-  .logo,
-  .credits {
-    width: 20%;
-    padding: 0 1rem;
-  }
-  .credits {
-    text-align: right;
-    cursor: pointer;
-  }
-  .logo a {
-    text-decoration: none;
-    color: orange;
-  }
-</style>
-
-<header>
-  <p class="logo">
-    <a href={getPath()}>QA Quest</a>
-  </p>
-  <p class="quest-name">{$headerStore.questName}</p>
-  <div class="credits">
+<header class="flex text-gold bg-black px-6">
+  <div class="w-1/3 h-12 text-left flex justify-center flex-col">
+    <span>
+      <a href={getPath()}>QA Quest</a>
+    </span>
+  </div>
+  <div class="w-1/3 h-12 text-center flex justify-center flex-col">
+    {$headerStore.questName}
+  </div>
+  <div class="w-1/3 h-12 text-right flex justify-center flex-col">
     {#if segment}
-      <p on:click={() => (showModal = true)}>Credits</p>
+      <div>
+        <span on:click={() => (showModal = true)} class="cursor-pointer inline">
+          Credits
+        </span>
+      </div>
     {/if}
   </div>
 </header>

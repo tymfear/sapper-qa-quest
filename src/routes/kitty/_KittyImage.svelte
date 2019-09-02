@@ -16,36 +16,14 @@
   }
 </script>
 
-<style>
-  .kittyContainer {
-    display: flex;
-    justify-content: center;
-  }
-
-  .kittyContainer img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-
-  .loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .loader p {
-    font-size: 2rem;
-  }
-</style>
-
-<figure class="kittyContainer">
+<figure class="flex justify-center">
   {#await kittyUrl}
-    <div class="loader">
+    <div class="flex justify-center align-center">
       <Loader />
-      <p>Loading your kitty</p>
+      <p class="text-4xl">Loading your kitty</p>
     </div>
   {:then src}
-    <img {src} alt="Kitty Gif" />
+    <img {src} alt="Kitty Gif" class="object-contain h-48 w-full" />
   {:catch}
     <p>Failed to load kitty image</p>
   {/await}

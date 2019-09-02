@@ -26,7 +26,7 @@
   <h3 slot="header">Credits</h3>
   <h4>Quest Author</h4>
   <div class="authorInfo">
-    <h1 id="authorName">{$headerStore.author}</h1>
+    <h1 class="text-3xl" id="authorName">{$headerStore.author}</h1>
     <div id="linkedinLink">
       <LinkedinLink link={$headerStore.profileLink} />
     </div>

@@ -1,12 +1,6 @@
 <script>
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-
-  let show = false;
-
-  onMount(() => {
-    show = true;
-  });
 </script>
 
 <style>
@@ -15,8 +9,6 @@
   }
 </style>
 
-{#if show}
-  <div in:fade>
-    <slot />
-  </div>
-{/if}
+<div in:fade>
+  <slot />
+</div>
