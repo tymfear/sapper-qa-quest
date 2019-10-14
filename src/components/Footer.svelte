@@ -1,17 +1,9 @@
-<style>
-  footer {
-    background-color: black;
-    color: orange;
-    padding: 1rem;
-    font-size: 1rem;
-    text-align: center;
-  }
-</style>
-
 <script>
   const getDate = () => {
-    const date = new Date();
-    return date.getFullYear();
-  }
+    return new Date().getFullYear();
+  };
 </script>
-<footer>© {getDate()}</footer>
+
+<footer class="bg-black text-gold p-4 text-base text-center">
+  © {getDate()}
+</footer>

@@ -4,7 +4,7 @@
 </script>
 
 <TransitionWrapper>
-  <h2>Admin Area</h2>
+  <h2 class="text-3xl">Admin Area</h2>
   <div>
     <KittyToggle />
   </div>

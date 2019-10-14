@@ -4,30 +4,12 @@
   import LinkedinLink from "../icons/LinkedinLink.svelte";
 </script>
 
-<style>
-  #linkedinLink {
-    height: 3rem;
-    width: 3rem;
-  }
-
-  .authorInfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  h1,
-  h3,
-  h4 {
-    margin: 0;
-  }
-</style>
-
 <Modal on:closeModal>
   <h3 slot="header">Credits</h3>
   <h4>Quest Author</h4>
-  <div class="authorInfo">
-    <h1 class="text-3xl" id="authorName">{$headerStore.author}</h1>
-    <div id="linkedinLink">
+  <div class="flex justify-between items-center">
+    <h1 class="text-3xl">{$headerStore.author}</h1>
+    <div class="w-12 h-12 ">
       <LinkedinLink link={$headerStore.profileLink} />
     </div>
   </div>

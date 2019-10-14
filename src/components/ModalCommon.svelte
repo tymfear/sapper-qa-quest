@@ -7,13 +7,7 @@
 
 <style>
   .modal-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: rgba(0, 0, 0, 0.3);
-    z-index: 10;
   }
 
   .modal {
@@ -53,7 +47,9 @@
   }
 </style>
 
-<div class="modal-background" on:click={dispatchClose} />
+<div
+  class="modal-background fixed top-0 left-0 w-full h-full z-10"
+  on:click={dispatchClose} />
 <div transition:fade={{ duration: 20 }}>
 
   <div class="modal">

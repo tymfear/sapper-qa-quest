@@ -14,17 +14,7 @@
 </script>
 
 <style>
-  #quest-navigator {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #navigator-links {
-    width: 100%;
-  }
-
-  #navigator-links a {
+  a {
     background-color: orange;
     display: block;
     text-align: center;
@@ -34,7 +24,7 @@
     font-size: 1rem;
   }
 
-  #navigator-links a:hover {
+  a:hover {
     color: orange;
     background-color: white;
     border: orange 1px solid;
@@ -42,11 +32,11 @@
 </style>
 
 <TransitionWrapper>
-  <div id="quest-navigator">
-    <h1>Choose your quest</h1>
+  <div class="flex flex-col items-center">
+    <h1 class="text-4xl">Choose your quest</h1>
 
-    <div id="navigator-links">
-      <a href={getPath('/kitty')}>Show me a Kitty!</a>
+    <div class="w-full">
+      <a rel="prefetch" href={getPath('/kitty')}>Show me a Kitty!</a>
     </div>
   </div>
 </TransitionWrapper>

@@ -15,7 +15,7 @@
       flex: 1;
       border-left: solid;
       border-right: solid;
-      height: calc(100vh - 7rem);
+      height: calc(100vh - 6rem);
       min-height: 500px;
     }
   }

@@ -3,12 +3,6 @@
   import { fade } from "svelte/transition";
 </script>
 
-<style>
-  div {
-    position: relative;
-  }
-</style>
-
-<div in:fade>
+<div in:fade class="relative">
   <slot />
 </div>

@@ -8,7 +8,7 @@
 </script>
 
 <TransitionWrapper>
-  <h2>Member Area</h2>
+  <h2 class="text-3xl">Member Area</h2>
   <div>
     <KittyToggle />
     {#if $showKitty}
