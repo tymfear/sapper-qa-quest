@@ -504,6 +504,38 @@ img {
   background-color: #000;
 }
 
+.bg-gold {
+  background-color: #ffa500;
+}
+
+.hover\:bg-white:hover {
+  background-color: #fff;
+}
+
+.border-gold {
+  border-color: #ffa500;
+}
+
+.hover\:border-gold:hover {
+  border-color: #ffa500;
+}
+
+.border-1\/2 {
+  border-width: 0.5px;
+}
+
+.border-r-2 {
+  border-right-width: 2px;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
+}
+
+.hover\:border:hover {
+  border-width: 1px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -544,6 +576,10 @@ img {
   justify-content: space-between;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -556,8 +592,16 @@ img {
   height: 100%;
 }
 
+.h-container {
+  height: calc(100vh - 6rem);
+}
+
 .object-contain {
   object-fit: contain;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -589,6 +633,10 @@ img {
   left: 0;
 }
 
+.hover\:shadow-gold-50:hover {
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
 .text-left {
   text-align: left;
 }
@@ -601,7 +649,15 @@ img {
   text-align: right;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .text-gold {
+  color: #ffa500;
+}
+
+.hover\:text-gold:hover {
   color: #ffa500;
 }
 
@@ -629,10 +685,27 @@ img {
   width: 33.333333%;
 }
 
+.w-6\/12 {
+  width: 50%;
+}
+
 .w-full {
   width: 100%;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+@media (min-width: 768px) {
+
+  .md\:my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
